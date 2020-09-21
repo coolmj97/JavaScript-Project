@@ -1,0 +1,24 @@
+{
+  "details": [
+    {
+      "title": "The Book of Us : Gluon - Nothing can tear us apart",
+      "artist": "DAY6 (Even of Day)",
+      "cover": "./assets/albumart.jpg",
+      "date": "2020.08.31",
+      "genre": "록/메탈, 발라드",
+      "publisher": "Dreamus",
+      "agency": "(주)JYP엔터테인먼트",
+      "image": "./assets/이븐오브데이.jpg"
+    },
+    {
+      "title": "BLOOM*IZ",
+      "artist": "IZ_ONE (아이즈원)",
+      "cover": "./assets/albumart2.jpg",
+      "date": "2020.02.17",
+      "genre": "댄스, 발라드",
+      "publisher": "지니뮤직",
+      "agency": "Stone Music Entertainment",
+      "image": "./assets/아이즈원.jpg"
+    }
+  ]
+}
