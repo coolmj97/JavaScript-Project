@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script src="play-music.js" defer></script>
+    <script src="like-button.js" defer></script>
+    <script src="new-pop-up.js" defer></script>
+  </head>
+  <body>
+    <!-- 메인 페이지 -->
+    <ul class="section">
+      <li class="playlist">
+        <img
+          src="./assets/albumart.jpg"
+          alt="The Book of Us : Gluon - Nothing can tear us apart"
+          class="album-cover"
+          data-key="title"
+          data-value="The Book of Us : Gluon - Nothing can tear us apart"
+        />
+
+        <div class="music-info">
+          <h1 class="title">파도가 끝나는 곳까지</h1>
+          <span class="artist">DAY6 (Even of Day)</span>
+          <audio
+            src="./assets/DAY6 (Even of Day) - 파도가 끝나는 곳까지.mp3"
+            class="music-item"
+          ></audio>
+        </div>
+
+        <button type="button" class="like-button">
+          <i class="far fa-heart"></i>
+          <i
+            class="fas fa-heart"
+            sr-only="add or remove this music to Like list"
+          ></i>
+        </button>
+      </li>
+
+      <li class="playlist">
+        <img
+          src="./assets/albumart2.jpg"
+          alt="BLOOM*IZ"
+          class="album-cover"
+          data-key="title"
+          data-value="BLOOM*IZ"
+        />
+
+        <div class="music-info">
+          <h1 class="title">FIESTA</h1>
+          <span class="artist">IZ_ONE (아이즈원)</span>
+          <audio
+            src="./assets/IZ_ONE (아이즈원)-02-FIESTA.mp3"
+            class="music-item"
+          ></audio>
+        </div>
+
+        <button type="button" class="like-button">
+          <i class="far fa-heart"></i>
+          <i
+            class="fas fa-heart"
+            sr-only="add or remove this music to Like list"
+          ></i>
+        </button>
+      </li>
+    </ul>
+
+    <!-- 팝업 -->
+    <button type="button" class="close-button">X</button>
+    <div class="modal"></div>
+  </body>
+</html>

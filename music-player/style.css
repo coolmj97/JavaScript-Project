@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spoqa Han Sans", "Sans-serif";
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0efeb;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+.section {
+  width: 450px;
+}
+
+.playlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #c0bfbf;
+}
+
+.album-cover {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.album-cover:hover {
+  opacity: 0.5;
+  transition: opacity 400ms ease;
+}
+
+.music-info {
+  text-align: center;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.music-info:hover {
+  opacity: 0.5;
+  transition: opacity 400ms ease;
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.artist {
+  font-size: 14px;
+}
+
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.far:before {
+  color: #c0bfbf;
+  cursor: pointer;
+}
+
+.fas:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.active {
+  color: #fc0505;
+}
+
+.cancel {
+  color: transparent;
+}
+
+.modal {
+  width: 0;
+  height: 0;
+  position: fixed;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transform: translate(-50%, -50%);
+  transition: visibility 0s, linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(23, 36, 90, 0.9);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  border: none;
+  background-color: inherit;
+  color: #000000;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show-close-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.pop-up-title {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pop-up-artist {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pop-up-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.pop-up-img img {
+  width: 200px;
+  border-radius: 4px;
+}
+
+.description-list {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dl-division dt {
+  font-size: 14px;
+  text-align: center;
+}
+
+.dl-division dd {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .artist {
+    font-size: 11px;
+  }
+
+  .modal-content {
+    width: 100vw;
+  }
+
+  .close-button {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    font-size: 20px;
+  }
+
+  .pop-up-img img {
+    width: 150px;
+  }
+
+  .dl-division dt {
+    font-size: 12px;
+  }
+
+  .dl-division dd {
+    font-size: 14px;
+  }
+}
