@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  font-size: 16px;
+  color: #424242;
+}
+
+/* Reset CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #424242;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Common CSS */
+button {
+  border: none;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  border: 2px solid #546e7a;
+  opacity: 0.6;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #78909c;
+}
+
+/* moblie ver */
+main {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  height: 100px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background-color: #546e7a;
+  color: #eeeeee;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.todo-content {
+  padding: 24px;
+}
+
+.todo-today {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.js-today {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.button-all {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.clear-all {
+  cursor: pointer;
+}
+
+.clear-all:hover {
+  opacity: 0.5;
+}
+
+.todo-count {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.list-section {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.todo-list li {
+  padding: 8px 0;
+  position: relative;
+}
+
+.todo-list li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.button-check {
+  margin-right: 4px;
+}
+
+.empty-box,
+.check-box {
+  color: #9e9e9e;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button-close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.close-box {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cancel {
+  color: #bdbdbd;
+}
+
+/* Desktop ver */
+@media screen and (min-width: 768px) {
+  main {
+    width: auto;
+  }
+
+  .title {
+    background-color: inherit;
+    color: #546e7a;
+  }
+
+  .todo-form {
+    width: 800px;
+  }
+}
