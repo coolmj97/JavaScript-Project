@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가계부</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./grid.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title">가계부</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <!-- 입력폼 -->
+            <aside class="sidebar section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="sidebar-title">내역 추가</h1>
+                    <form action="#">
+                      <label for="division">구분</label>
+                      <div class="division-group">
+                        <input
+                          type="radio"
+                          id="income"
+                          class="button-income"
+                          name="division"
+                          value="수입"
+                        />
+                        <label for="income">수입</label>
+                        <input
+                          type="radio"
+                          id="expense"
+                          class="button-expense"
+                          name="division"
+                          value="지출"
+                        />
+                        <label for="expense">지출</label>
+                      </div>
+
+                      <div class="date-group">
+                        <label for="date">날짜</label>
+                        <input
+                          type="text"
+                          pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                          id="date"
+                          placeholder="ex) 2020-01-15"
+                        />
+                      </div>
+
+                      <div class="price-group">
+                        <label for="price">금액</label>
+                        <input
+                          type="number"
+                          id="price"
+                          placeholder="금액을 입력하세요"
+                        />
+                      </div>
+
+                      <div class="content-group">
+                        <label for="content">내용</label>
+                        <input
+                          type="text"
+                          id="content"
+                          placeholder="내용을 입력하세요"
+                          minlength="1"
+                          maxlength="20"
+                        />
+                      </div>
+
+                      <button type="submit" class="button-apply">
+                        추가하기
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <!-- 리스트 -->
+            <section class="table section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="button-group">
+                      <div class="button-filter">
+                        <button type="menu" class="filter-all">전체내역</button>
+                        <button type="menu" class="filter-income">수입</button>
+                        <button type="menu" class="filter-expense">지출</button>
+                      </div>
+                      <div class="button-sort">
+                        <select name="sort">
+                          <option value="">정렬</option>
+                          <option value="price-low">낮은 금액순</option>
+                          <option value="price-high">높은 금액순</option>
+                          <option value="date-past">과거순</option>
+                          <option value="date-latest">최근순</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="underline"></div>
+
+                    <ul class="record-lists"></ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 합계 -->
+            <footer class="footer section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="total-group">
+                      <h2 class="income">
+                        총수입
+                        <strong class="sum-income">0원</strong>
+                      </h2>
+                      <h2 class="expense">
+                        총지출
+                        <strong class="sum-expense">0원</strong>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
