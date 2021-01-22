@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일별 박스오피스 순위</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <section class="box-office">
+      <header class="box-office-header">
+        <h1 class="box-office-title">일별 박스오피스 순위</h1>
+
+        <section class="box-office-selection">
+          <div class="selection-group">
+            <label for="year">연도</label>
+            <select name="year-group" id="year" class="year-group">
+              <option value="">선택하세요</option>
+            </select>
+          </div>
+
+          <div class="selection-group">
+            <label for="month">월</label>
+            <select name="month-group" id="month" class="month-group"></select>
+          </div>
+
+          <div class="selection-group">
+            <label for="date">일</label>
+            <select name="date-group" id="date" class="date-group"></select>
+          </div>
+
+          <button type="button" class="search-button">
+            <i class="fas fa-search"></i>
+            검색
+          </button>
+        </section>
+      </header>
+
+      <main class="box-office-main">
+        <h2 class="box-office-list-title"></h2>
+
+        <table class="box-office-list">
+          <thead>
+            <tr>
+              <td>순위</td>
+              <td>영화명</td>
+              <td>개봉일</td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </section>
+  </body>
+</html>
