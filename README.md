@@ -45,9 +45,9 @@
   - 앨범 아트를 클릭하면 해당 앨범과 가수 정보를 제공(JSON)   
   - 좋아요 버튼   
 * 기술 스택   
-  -HTML   
-  -CSS   
-  -es6 JavaScript   
+  - HTML   
+  - CSS   
+  - es6 JavaScript   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/music-player/)
 <hr/>
 
@@ -59,8 +59,8 @@
   - 남은 할 일 개수 표시   
    
 * 기술 스택   
-  -HTML   
-  -CSS   
-  -es6 JavaScript   
+  - HTML   
+  - CSS   
+  - es6 JavaScript   
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/to-do-list/)
