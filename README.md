@@ -16,6 +16,6 @@
   - CSS   
   - Bootstrap   
   - JavaScript      
-
-[ 바로가기](https://coolmj97.github.io/JavaScript-Project/account-book/)
+* 링크   
+  -[가계부바로가기](https://coolmj97.github.io/JavaScript-Project/account-book/)
 <hr/>
