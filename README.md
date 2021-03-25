@@ -35,7 +35,7 @@
   - es6 JavaScript   
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/daily-box-office-API/)   
-
+<hr/>
 ## 3. 뮤직 플레이어 (music player)   
 * JSON 이용   
 
@@ -48,7 +48,7 @@
   -CSS   
   -es6 JavaScript   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/music-player/)
-
+<hr/>
 ## 4. 투두리스트 (to do list)
 * 기능   
   - form 제출 시 리스트 출력, 삭제, 로컬 스토리지 저장   
