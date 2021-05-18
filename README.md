@@ -16,7 +16,7 @@
   - HTML   
   - CSS   
   - Bootstrap   
-  - es6 JavaScript      
+  - JavaScript(ES6)      
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/account-book/)
 <hr/>
@@ -34,7 +34,7 @@
 * 기술 스택   
   - HTML   
   - CSS   
-  - es6 JavaScript   
+  - JavaScript(ES6)   
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/daily-box-office-API/)   
 <hr/>
@@ -50,7 +50,7 @@
 * 기술 스택   
   - HTML   
   - CSS   
-  - es6 JavaScript   
+  - JavaScript(ES6)   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/music-player/)
 <hr/>
 
@@ -67,6 +67,6 @@
 * 기술 스택   
   - HTML   
   - CSS   
-  - es6 JavaScript   
+  - JavaScript(ES6)   
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/to-do-list/)
