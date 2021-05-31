@@ -68,9 +68,11 @@ function createRecord(order, date, price, content) {
   recordBox.addEventListener('mouseover', () => {
     editBtns.style.visibility = 'visible';
   });
+
   recordBox.addEventListener('mouseout', () => {
     editBtns.style.visibility = 'hidden';
   });
+
   editBtns.addEventListener('click', (event) => {
     if (event.target.className === 'button-modification') {
       if (editBtns.id === li.id) {
@@ -194,6 +196,22 @@ function handleSubmit() {
   formContent.value = '';
 }
 
+function checkForm() {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (
+      (incomeBtn.checked === false && expenseBtn.checked === false) ||
+      formDate.value === '' ||
+      formPrice.value === '' ||
+      formContent.value === ''
+    ) {
+      alert('내역을 빠짐없이 입력하세요.');
+    } else {
+      handleSubmit();
+    }
+  });
+}
+
 function parseRecord() {
   const loadedAll = localStorage.getItem('all');
   if (loadedAll !== null) {
@@ -211,19 +229,7 @@ function init() {
   parseRecord();
   onFilter();
   onSort();
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (
-      (incomeBtn.checked === false && expenseBtn.checked === false) ||
-      formDate.value === '' ||
-      formPrice.value === '' ||
-      formContent.value === ''
-    ) {
-      return;
-    } else {
-      handleSubmit();
-    }
-  });
+  checkForm();
 }
 
 init();

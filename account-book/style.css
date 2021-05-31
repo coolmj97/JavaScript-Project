@@ -207,7 +207,7 @@ input:checked + label {
 .buttons-edit {
   display: inline-block;
   margin-right: 8px;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .button-modification,
@@ -241,5 +241,11 @@ input:checked + label {
 
   .footer {
     margin: 0;
+  }
+
+  .buttons-edit {
+    display: inline-block;
+    margin-right: 8px;
+    visibility: hidden;
   }
 }
