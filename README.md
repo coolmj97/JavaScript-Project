@@ -58,6 +58,7 @@
   
 * 링크 : [바로가기](https://coolmj97.github.io/JavaScript-Project/to-do-list/)
 <hr/>
+
 ## 4. 뮤직 플레이어 (music player)   
 <img width="1280" alt="thumbnail" src="https://user-images.githubusercontent.com/65945909/120152617-a523cf80-c228-11eb-9dad-f9b5af2a0c5f.gif">       
 
